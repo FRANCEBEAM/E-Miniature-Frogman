@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+//Properties
+$font : 'Oswald', sans-serif;
+
+//Main color
+$orange: #FF4800;
+$red: #FF2200;
+$black: #121212;
+$black-bg: #000000;
+$yellow: #EACA41;
+
+//Secondary Color
+$white: #ffffff;
+$blend-white: #d9d9d9;
+
+body{
+    font-family: $font;
+}
+
+// Navbar
+nav.nav-container{
+    padding: 1em 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    line-height: 60px;
+    background: rgba(0, 0, 0, 0.7);
+
+    ul.nav-li{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        padding-top: 5.7em;
+        // padding-top: 7em;
+        transform: translateY(-100%);
+        transition: 1s;
+        li{
+           text-align: center;
+            line-height: 100px;
+            background: rgba(0, 0, 0, 0.7);
+            list-style: none;
+        }
+        li a{
+            // margin: 0 auto;
+            
+            font-size: 20px;
+            text-decoration: none;
+            color: $white;
+        }
+        li:hover{
+            background: $orange;
+            transition: 1s;
+        }
+    }
+
+    div.navbar-toggle{
+        display: grid !important;
+        height: min-content;
+        cursor: pointer;
+        margin: auto 0;
+
+        span.bar{
+            border-radius: 20%;
+            margin-bottom: 5px;
+            background: $white;
+            width: 30px;
+            height: 5px;
+            transition: .6s;
+        }
+    }
+
+    //Activate when click
+    ul.nav-li.open{
+        transform: translateY(0);
+    }
+
+    // Burger Menu will animate
+    div.navbar-toggle.active .bar:nth-child(1){
+        position: absolute;
+        transform: rotate(45deg);
+        transition: .6s;
+    }
+    div.navbar-toggle.active .bar:nth-child(2){
+        display: none;
+        transition: .6s;
+    }
+    div.navbar-toggle.active .bar:nth-child(3){
+        transform: rotate(-45deg);
+        transition: .6s;
+    }
+}
+
+
+//Hero - section
+div.hero-wrapper{
+    width: 100%;
+    section.hero-container{
+        padding: 12em 1em;
+        background-image: linear-gradient(to top,rgba(0, 0, 0, 0.404)50%, rgba(0, 0, 0, 0.26)90%),url(/src/img/hero-img.jpg);
+        background-repeat: no-repeat;
+        height: 800px;
+        background-size: cover;
+        div.left-content{
+            text-align: center;
+            color: $white;
+            div.main-header{
+                h1{
+                    font-size: 46px;
+                    text-transform: uppercase;
+                }
+            }
+            div.main-desc{
+                padding-top: 3em;
+                p{
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+            }
+
+            div.main-cta{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding-top: 5em;
+                div.btn1{
+                    a{
+                        border-radius: 5px;
+                        background: $yellow;
+                        padding: 1em 1.6em;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+                div.btn2{
+                    a{
+                        border-radius: 5px;
+                        border: 2px solid #ffffff;
+                        padding: 1em 1.6em;
+
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        color: $white;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Brand Content
+div.brand-wrapper{
+    section.brand-container{
+        background: url(/src/img/content-1.jpg);
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 768px){
+    div.nav-wrapper{
+        nav.nav-container{
+            div.navbar-toggle{
+                span.bar{
+                    display: none;
+                }
+            }
+
+            ul.nav-li{
+                transform: none;
+                position: fixed;
+                display: flex;
+                justify-content: right;
+                padding: 0;
+                right: 0;
+
+                li{
+                  padding: 0 1em;
+                    
+                  background: none;
+                }
+            }
+        }
+    }
+}
