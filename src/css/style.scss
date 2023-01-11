@@ -136,11 +136,14 @@ div.hero-wrapper{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 padding-top: 5em;
+                gap: 1em;
                 div.btn1{
                     a{
+                        padding: 1em;
                         border-radius: 5px;
                         background: $yellow;
-                        padding: 1em 1.6em;
+                        width: 100%;
+                        display: inline-block;
                         font-weight: bold;
                         text-transform: uppercase;
                         color: $black;
@@ -149,10 +152,11 @@ div.hero-wrapper{
                 }
                 div.btn2{
                     a{
+                        padding: 1em;
                         border-radius: 5px;
                         border: 2px solid #ffffff;
-                        padding: 1em 1.6em;
-
+                        width: 100%;
+                        display: inline-block;
                         font-weight: bold;
                         text-transform: uppercase;
                         color: $white;
@@ -167,7 +171,46 @@ div.hero-wrapper{
 // Brand Content
 div.brand-wrapper{
     section.brand-container{
-        background: url(/src/img/content-1.jpg);
+        background: $black-bg;
+        padding: 2em 1em;
+        div.main-header{
+            h1{
+                color: $white;
+                font-size: 22px;
+                text-transform: uppercase;
+            }
+        }
+        div.main-desc{
+            p{
+                color: $white;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+        }
+
+        //Box Brand
+        div.box-container{
+            padding-top: 4em;
+            div.box-brand{
+                cursor: pointer;
+                margin-bottom: 2em;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        // Patch Brand
+        div.patch-container{
+            padding-top: 4em;
+            div.patch-brand{
+                cursor: pointer;
+                margin-bottom: 2em;
+                img{
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 

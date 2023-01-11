@@ -110,20 +110,25 @@ div.hero-wrapper section.hero-container div.left-content div.main-cta {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-top: 5em;
+  gap: 1em;
 }
 div.hero-wrapper section.hero-container div.left-content div.main-cta div.btn1 a {
+  padding: 1em;
   border-radius: 5px;
   background: #EACA41;
-  padding: 1em 1.6em;
+  width: 100%;
+  display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
   color: #121212;
   text-decoration: none;
 }
 div.hero-wrapper section.hero-container div.left-content div.main-cta div.btn2 a {
+  padding: 1em;
   border-radius: 5px;
   border: 2px solid #ffffff;
-  padding: 1em 1.6em;
+  width: 100%;
+  display: inline-block;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
@@ -131,7 +136,38 @@ div.hero-wrapper section.hero-container div.left-content div.main-cta div.btn2 a
 }
 
 div.brand-wrapper section.brand-container {
-  background: url(/src/img/content-1.jpg);
+  background: #000000;
+  padding: 2em 1em;
+}
+div.brand-wrapper section.brand-container div.main-header h1 {
+  color: #ffffff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+div.brand-wrapper section.brand-container div.main-desc p {
+  color: #ffffff;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+div.brand-wrapper section.brand-container div.box-container {
+  padding-top: 4em;
+}
+div.brand-wrapper section.brand-container div.box-container div.box-brand {
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+div.brand-wrapper section.brand-container div.box-container div.box-brand img {
+  width: 100%;
+}
+div.brand-wrapper section.brand-container div.patch-container {
+  padding-top: 4em;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand {
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand img {
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
