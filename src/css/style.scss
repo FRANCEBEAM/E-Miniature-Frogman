@@ -170,20 +170,20 @@ div.hero-wrapper{
 
 // Brand Content
 div.brand-wrapper{
+    background: $black-bg;
     section.brand-container{
-        background: $black-bg;
-        padding: 2em 1em;
+        padding: 4em 1em;
         div.main-header{
             h1{
                 color: $white;
-                font-size: 22px;
+             
                 text-transform: uppercase;
             }
         }
         div.main-desc{
             p{
                 color: $white;
-                font-size: 12px;
+         
                 text-transform: uppercase;
             }
         }
@@ -204,12 +204,137 @@ div.brand-wrapper{
         div.patch-container{
             padding-top: 4em;
             div.patch-brand{
-                cursor: pointer;
+                background: $black;
                 margin-bottom: 2em;
                 img{
                     width: 100%;
                 }
+                div.patch-desc{
+                    padding: 1em;
+                    color: $white;
+                    h1{
+                        font-size: 24px;
+                    }
+                }
+                div.patch-btn{
+                    padding: 1em;
+                   
+                    button.addcart-btn{
+                        cursor: pointer;
+                        background: $yellow;
+                        color: $black;
+                        padding: 1.4em;
+                        border: none;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        border-radius: 6px;
+                    }
+                    button.addcart-btn:hover{
+                        background: #b49d36;
+                        transition: .6s;
+                    }
+                }
             }
+        }
+    }
+}
+
+// Apparel Section
+div.apparel-wrapper{
+    background: $black-bg;
+    section.apparel-container{
+        padding: 4em 1em;
+        color: $white;
+        div.apparel-brand{
+            padding-top: 4em;
+            div.apparel-img{
+                img{
+                    width: 100%;
+                }
+            }
+            div.apparel-desc{
+                margin-bottom: 3em;
+                p{
+                    font-size: 14px;
+                }
+            }
+            div.size-selection{
+                padding: 1em;
+                background: $yellow;
+                color: $black;
+                font-weight: bold;
+                label{
+                    font-size: 14px;
+                }
+                select.drop-select{
+                    font-family: $font;
+                    width: 40%;
+                    padding: .7em;
+                }
+                button.buy-btn{
+                    border: #000000 1px solid;
+                    padding: .7em;
+                    border-radius: 6px;
+                    background: $orange;
+                    font-family: $font;
+                    width: 20%;
+                    color: $white;
+                    cursor: pointer;
+             
+                }
+                button.buy-btn:hover{
+                    background: #c73a02;
+                    transition: .6s;
+                }
+            }
+        }
+    }
+}
+
+//Game components Section
+div.components-wrapper{
+    background: $black-bg;
+    section.components-container{
+        padding: 0 1em 6em;
+
+        color: $white;
+        div.box-components{
+            margin-top: 4em;
+            background: $black;
+            padding: 2em;
+            div.head-components{
+                text-align: center;
+                h1{
+                    font-size: 22px;
+                }
+            }
+            div.components-img{
+                margin-top: 1em;
+                img{
+                    width: 100%;
+                }
+            }
+            div.components-desc{
+                margin-top: 1em;
+            }
+            div.view{
+                padding-top: 2em;
+                button.btn-view{
+                    cursor: pointer;
+                    font-weight: bold;
+                    font-size: 18px;
+                    background: $red;
+                    color: $white;
+                    border: none;
+                    padding: 1em;
+                    width: 100%;
+                }
+                button.btn-view:hover{
+                    background: #c01e05;
+                    transition: .7s;
+                }
+            }
+
         }
     }
 }

@@ -135,18 +135,18 @@ div.hero-wrapper section.hero-container div.left-content div.main-cta div.btn2 a
   text-decoration: none;
 }
 
-div.brand-wrapper section.brand-container {
+div.brand-wrapper {
   background: #000000;
-  padding: 2em 1em;
+}
+div.brand-wrapper section.brand-container {
+  padding: 4em 1em;
 }
 div.brand-wrapper section.brand-container div.main-header h1 {
   color: #ffffff;
-  font-size: 22px;
   text-transform: uppercase;
 }
 div.brand-wrapper section.brand-container div.main-desc p {
   color: #ffffff;
-  font-size: 12px;
   text-transform: uppercase;
 }
 div.brand-wrapper section.brand-container div.box-container {
@@ -163,11 +163,128 @@ div.brand-wrapper section.brand-container div.patch-container {
   padding-top: 4em;
 }
 div.brand-wrapper section.brand-container div.patch-container div.patch-brand {
-  cursor: pointer;
+  background: #121212;
   margin-bottom: 2em;
 }
 div.brand-wrapper section.brand-container div.patch-container div.patch-brand img {
   width: 100%;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand div.patch-desc {
+  padding: 1em;
+  color: #ffffff;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand div.patch-desc h1 {
+  font-size: 24px;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand div.patch-btn {
+  padding: 1em;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand div.patch-btn button.addcart-btn {
+  cursor: pointer;
+  background: #EACA41;
+  color: #121212;
+  padding: 1.4em;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 6px;
+}
+div.brand-wrapper section.brand-container div.patch-container div.patch-brand div.patch-btn button.addcart-btn:hover {
+  background: #b49d36;
+  transition: 0.6s;
+}
+
+div.apparel-wrapper {
+  background: #000000;
+}
+div.apparel-wrapper section.apparel-container {
+  padding: 4em 1em;
+  color: #ffffff;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand {
+  padding-top: 4em;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.apparel-img img {
+  width: 100%;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.apparel-desc {
+  margin-bottom: 3em;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.apparel-desc p {
+  font-size: 14px;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.size-selection {
+  padding: 1em;
+  background: #EACA41;
+  color: #121212;
+  font-weight: bold;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.size-selection label {
+  font-size: 14px;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.size-selection select.drop-select {
+  font-family: "Oswald", sans-serif;
+  width: 40%;
+  padding: 0.7em;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.size-selection button.buy-btn {
+  border: #000000 1px solid;
+  padding: 0.7em;
+  border-radius: 6px;
+  background: #FF4800;
+  font-family: "Oswald", sans-serif;
+  width: 20%;
+  color: #ffffff;
+  cursor: pointer;
+}
+div.apparel-wrapper section.apparel-container div.apparel-brand div.size-selection button.buy-btn:hover {
+  background: #c73a02;
+  transition: 0.6s;
+}
+
+div.components-wrapper {
+  background: #000000;
+}
+div.components-wrapper section.components-container {
+  padding: 0 1em 6em;
+  color: #ffffff;
+}
+div.components-wrapper section.components-container div.box-components {
+  margin-top: 4em;
+  background: #121212;
+  padding: 2em;
+}
+div.components-wrapper section.components-container div.box-components div.head-components {
+  text-align: center;
+}
+div.components-wrapper section.components-container div.box-components div.head-components h1 {
+  font-size: 22px;
+}
+div.components-wrapper section.components-container div.box-components div.components-img {
+  margin-top: 1em;
+}
+div.components-wrapper section.components-container div.box-components div.components-img img {
+  width: 100%;
+}
+div.components-wrapper section.components-container div.box-components div.components-desc {
+  margin-top: 1em;
+}
+div.components-wrapper section.components-container div.box-components div.view {
+  padding-top: 2em;
+}
+div.components-wrapper section.components-container div.box-components div.view button.btn-view {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  background: #FF2200;
+  color: #ffffff;
+  border: none;
+  padding: 1em;
+  width: 100%;
+}
+div.components-wrapper section.components-container div.box-components div.view button.btn-view:hover {
+  background: #c01e05;
+  transition: 0.7s;
 }
 
 @media only screen and (min-width: 768px) {
