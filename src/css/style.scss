@@ -149,6 +149,10 @@ div.hero-wrapper{
                         color: $black;
                         text-decoration: none;
                     }
+                    a:hover{
+                        background: #97842e;
+                        transition: .7s;
+                    }
                 }
                 div.btn2{
                     a{
@@ -161,6 +165,10 @@ div.hero-wrapper{
                         text-transform: uppercase;
                         color: $white;
                         text-decoration: none;
+                    }
+                    a:hover{
+                        background: #c73a02;
+                        transition: .7s;
                     }
                 }
             }
@@ -176,7 +184,6 @@ div.brand-wrapper{
         div.main-header{
             h1{
                 color: $white;
-             
                 text-transform: uppercase;
             }
         }
@@ -202,7 +209,7 @@ div.brand-wrapper{
 
         // Patch Brand
         div.patch-container{
-            padding-top: 4em;
+            // padding-top: 1em;
             div.patch-brand{
                 background: $black;
                 margin-bottom: 2em;
@@ -230,8 +237,8 @@ div.brand-wrapper{
                         border-radius: 6px;
                     }
                     button.addcart-btn:hover{
-                        background: #b49d36;
-                        transition: .6s;
+                        background: #97842e;
+                        transition: .7s;
                     }
                 }
             }
@@ -243,7 +250,7 @@ div.brand-wrapper{
 div.apparel-wrapper{
     background: $black-bg;
     section.apparel-container{
-        padding: 4em 1em;
+        padding: 1em 1em;
         color: $white;
         div.apparel-brand{
             padding-top: 4em;
@@ -263,12 +270,21 @@ div.apparel-wrapper{
                 background: $yellow;
                 color: $black;
                 font-weight: bold;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                gap: .6em;
                 label{
-                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    
+                    font-size: 12px;
+                    margin: 0 auto;
                 }
                 select.drop-select{
                     font-family: $font;
-                    width: 40%;
+                    width: 100%;
+                    text-align: center;
                     padding: .7em;
                 }
                 button.buy-btn{
@@ -277,14 +293,14 @@ div.apparel-wrapper{
                     border-radius: 6px;
                     background: $orange;
                     font-family: $font;
-                    width: 20%;
+                    width: 100%;
                     color: $white;
                     cursor: pointer;
              
                 }
                 button.buy-btn:hover{
                     background: #c73a02;
-                    transition: .6s;
+                    transition: .7s;
                 }
             }
         }
@@ -295,8 +311,7 @@ div.apparel-wrapper{
 div.components-wrapper{
     background: $black-bg;
     section.components-container{
-        padding: 0 1em 6em;
-
+        padding: 4em 1em 6em;
         color: $white;
         div.box-components{
             margin-top: 4em;
@@ -306,6 +321,7 @@ div.components-wrapper{
                 text-align: center;
                 h1{
                     font-size: 22px;
+                    color: $white;
                 }
             }
             div.components-img{
@@ -339,10 +355,190 @@ div.components-wrapper{
     }
 }
 
+//game wrapper
+div.game-wrapper{
+    background: $blend-white;
+    section.game-container{
+        padding: 1em;
+        div.main-header{
+            div.sub-head{
+                font-size: 18px;
+                background: $black-bg;
+                padding: .7em;
+                color: $orange;
+            }
+        }
+        div.main-desc{
+            h1{
+                font-size: 24px;
+                color: $black;
+            }
+        }
+        div.thebasics-container{
+            padding-top: 3em;
+        }
+        div.right-content{
+            grid-area: thebasics;
+            div.game-text{
+                padding-top: 3em;
+                p{
+                    font-size: 14px;
+                    color: $black;
+                }
+            }
+            div.game-desc{
+                padding-top: 1em;
+                p{
+                    font-size: 14px;
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+//Operational Wrapper
+div.operation-wrapper{
+    background: $blend-white;
+    section.operation-container{
+        padding: 0 1em 4em;
+        div.left-content{
+            div.main-header{
+                div.sub-head{
+                    font-size: 18px;
+                    background: $black-bg;
+                    padding: .7em;
+                    color: $orange;
+                    h1{
+                        color: $orange;
+                    }
+                }
+            }
+            padding-top: 2em;
+            div.operational-desc{
+                padding-top: 2em;
+                p{
+                    font-size: 14px;
+                }
+            }
+
+            div.red-notice{
+                margin-top: 2em;
+                padding: .7em;
+                background: $red;
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+            }
+        }
+        div.right-content{
+            padding-top: 2em;
+            div.card-operational{
+                padding: .7em;
+                margin-bottom: 1.4em;
+                color: $white;
+                background: $black-bg;
+                border-top: $orange solid 10px;
+                div.head-op{
+                    h1{
+                        color: $orange;
+                    }
+                }
+                div.op-desc1{
+                    padding-top: 1em;
+                    h5{
+                        color: $orange;
+                        margin-bottom: .7em;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                div.op-desc2{
+                    padding-top: 2em;
+                    h5{
+                        color: $orange;
+                        margin-bottom: .7em;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+// Footer Wrapper
+div.footer-wrapper{
+    background: $black-bg;
+    footer.footer-container{
+        color: $white;
+
+        padding: 4em 1em;
+    
+        div.left-foot{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            div.merch-li{
+                padding-top: 1em;
+                line-height: 3em;
+                h1{
+                    font-size: 20px;
+                }
+                ul{
+                    li{
+                        list-style: none;
+                        a{
+                            text-decoration: none;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        div.right-foot{
+            padding-top: 4em;
+            ul{
+                display: flex;
+                li{
+                    margin: 0 auto;
+                    list-style: none;
+                    a{
+                        font-size: 20px;
+                        text-decoration: none;
+                        color: $white;
+                    }
+                }
+            }
+        }
+        div.social-container{
+            display: flex;
+            padding: 4em 3em;
+            i{
+                font-size: 1.7em;
+              
+            }
+            a{
+                
+                margin: 0 auto;
+                text-decoration: none;
+                list-style: none;
+                color: $white;
+            }
+        }
+        div.copy-section{
+            padding-top: 2em;
+            text-align: center;
+        }
+    }
+}
 
 
 
-
+// Tablet View
 @media only screen and (min-width: 768px){
     div.nav-wrapper{
         nav.nav-container{
@@ -368,4 +564,140 @@ div.components-wrapper{
             }
         }
     }
+
+    //Hero - section
+    div.hero-wrapper{
+        section.hero-container{
+            div.left-content{
+                padding: 0 4em;
+                div.main-header{
+                    h1{
+                        font-size: 52px;
+                    }
+                }
+                div.main-desc{
+                    p{
+                        font-size: 16px;
+                    }
+                }
+                div.main-cta{
+                    div.btn1{
+                        a{
+                            padding: 1.3em;
+                        }
+                    }
+                    div.btn2{
+                        a{
+                            padding: 1.3em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Brand - Section
+    div.brand-wrapper{
+        section.brand-container{
+            div.box-container{
+                display: grid;
+                gap: 1em;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            div.patch-container{
+                display: grid;
+                gap: 1em;
+                grid-template-columns: 1fr 1fr 1fr;
+                div.patch-brand{
+                    div.patch-desc{
+                        p{
+                            font-size: 13px;
+                        }
+                        h1{
+                            font-size: 18px;
+                        }
+                        p.price{
+                            margin-top: 1em;
+                            font-size: 16px;
+                        }
+                    }
+                    div.patch-btn{
+                        button.addcart-btn{
+                            width: 100%;
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+//Apparel section
+div.apparel-wrapper{
+    section.apparel-container{
+        div.brand-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        }
+
+    }
+}
+
+//components Section
+div.components-wrapper{
+    section.components-container{
+        div.boxcomponents-container{
+            display: grid;
+           grid-template-columns: 1fr 1fr;
+           gap: 1em;
+        }
+     
+    }
+}
+
+//game wrapper
+div.game-wrapper{
+    background: $blend-white;
+    section.game-container{
+        padding: 1em;
+        div.thebasics-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            grid-template-areas: "img thebasics";
+        }
+        div.right-content{
+            grid-area: thebasics;
+        }
+        div.left-content{
+            grid-area: img;
+            background: url(/src/img/the-basics.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+//Operational wrapper
+div.operation-wrapper{
+    section.operation-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
+}
+
+// Footer wrapper
+div.footer-wrapper{
+    footer.footer-container{
+        div.left-foot{
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
 }
