@@ -558,7 +558,11 @@ div.footer-wrapper footer.footer-container div.copy-section {
   div.footer-wrapper footer.footer-container div.left-foot {
     margin: 0 auto;
     display: grid;
+    padding-top: 4em;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  div.footer-wrapper footer.footer-container div.social-container {
+    padding-top: 7em;
   }
 }
 @media only screen and (min-width: 826px) {
@@ -568,29 +572,49 @@ div.footer-wrapper footer.footer-container div.copy-section {
   }
 }
 @media only screen and (min-width: 1200px) {
-  div.nav-wrapper nav.nav-container {
-    padding: 1em 60px;
+  div.nav-wrapper nav.nav-container div.logo-container {
+    width: 1200px;
+    padding: 1em 10px;
+    margin: 0 auto;
   }
   div.nav-wrapper nav.nav-container ul.nav-li {
-    padding: 0 60px;
+    width: 1200px;
+    padding: 1em 40px;
+    margin: 0 auto;
   }
   div.hero-wrapper section.hero-container {
     margin: 0 auto;
-    padding: 14em 60px;
+    padding-top: 17em;
+    height: 950px;
   }
   div.hero-wrapper section.hero-container div.left-content {
+    padding: 1em 10px;
     margin: 0 auto;
     width: 1200px;
   }
   div.hero-wrapper section.hero-container div.left-content div.main-header h1 {
-    font-size: 62px;
+    text-align: left;
+    font-size: 72px;
+    width: 740px;
   }
   div.hero-wrapper section.hero-container div.left-content div.main-desc p {
-    font-size: 16px;
+    text-align: left;
+    font-size: 27px;
+    width: 550px;
+  }
+  div.hero-wrapper section.hero-container div.left-content div.main-cta {
+    width: 400px;
+    margin: 0;
+  }
+  div.brand-wrapper {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.877) 50%, rgba(0, 0, 0, 0.705) 50%), url(/src/img/content-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   div.brand-wrapper section.brand-container {
     margin: 0 auto;
-    padding: 4em 60px;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.brand-wrapper section.brand-container div.main-header h1 {
     font-size: 32px;
@@ -603,7 +627,8 @@ div.footer-wrapper footer.footer-container div.copy-section {
   }
   div.apparel-wrapper section.apparel-container {
     margin: 0 auto;
-    padding: 4em 60px;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.apparel-wrapper section.apparel-container div.main-header h1 {
     font-size: 32px;
@@ -626,9 +651,15 @@ div.footer-wrapper footer.footer-container div.copy-section {
   div.apparel-wrapper div.brand-container div.apparel-brand button.buy-btn {
     font-size: 18px;
   }
+  div.components-wrapper {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.623) 50%), url(/src/img/content-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   div.components-wrapper section.components-container {
     margin: 0 auto;
-    padding: 4em 60px;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.components-wrapper section.components-container div.main-header h1 {
     font-size: 32px;
@@ -647,7 +678,8 @@ div.footer-wrapper footer.footer-container div.copy-section {
   }
   div.game-wrapper section.game-container {
     margin: 0 auto;
-    padding: 4em 60px;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.game-wrapper section.game-container div.thebasics-container div.right-content div.main-header h3 {
     font-size: 24px;
@@ -672,7 +704,8 @@ div.footer-wrapper footer.footer-container div.copy-section {
   }
   div.operation-wrapper section.operation-container {
     margin: 0 auto;
-    padding: 4em 60px;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.operation-wrapper section.operation-container div.left-content div.main-header h3 {
     font-size: 24px;
@@ -699,7 +732,9 @@ div.footer-wrapper footer.footer-container div.copy-section {
     font-size: 16px;
   }
   div.footer-wrapper footer.footer-container {
-    padding: 4em 60px;
+    margin: 0 auto;
+    padding: 4em 10px;
+    width: 1200px;
   }
   div.footer-wrapper footer.footer-container div.foot1-container {
     display: grid;
@@ -707,5 +742,12 @@ div.footer-wrapper footer.footer-container div.copy-section {
   }
   div.footer-wrapper footer.footer-container div.foot1-container div.left-foot {
     grid-area: support;
+    gap: 5em;
+  }
+  div.footer-wrapper footer.footer-container div.social-container {
+    padding: 8em 17em;
+  }
+  div.footer-wrapper footer.footer-container div.social-container a {
+    font-size: 23px;
   }
 }/*# sourceMappingURL=style.css.map */
