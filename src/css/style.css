@@ -560,4 +560,152 @@ div.footer-wrapper footer.footer-container div.copy-section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
+}
+@media only screen and (min-width: 826px) {
+  div.hero-wrapper section.hero-container div.main-cta {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  div.nav-wrapper nav.nav-container {
+    padding: 1em 60px;
+  }
+  div.nav-wrapper nav.nav-container ul.nav-li {
+    padding: 0 60px;
+  }
+  div.hero-wrapper section.hero-container {
+    margin: 0 auto;
+    padding: 14em 60px;
+  }
+  div.hero-wrapper section.hero-container div.left-content {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  div.hero-wrapper section.hero-container div.left-content div.main-header h1 {
+    font-size: 62px;
+  }
+  div.hero-wrapper section.hero-container div.left-content div.main-desc p {
+    font-size: 16px;
+  }
+  div.brand-wrapper section.brand-container {
+    margin: 0 auto;
+    padding: 4em 60px;
+  }
+  div.brand-wrapper section.brand-container div.main-header h1 {
+    font-size: 32px;
+  }
+  div.brand-wrapper section.brand-container div.main-desc p {
+    font-size: 20px;
+  }
+  div.brand-wrapper section.brand-container div.patch-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.apparel-wrapper section.apparel-container {
+    margin: 0 auto;
+    padding: 4em 60px;
+  }
+  div.apparel-wrapper section.apparel-container div.main-header h1 {
+    font-size: 32px;
+  }
+  div.apparel-wrapper section.apparel-container div.main-desc p {
+    font-size: 20px;
+  }
+  div.apparel-wrapper div.brand-container div.apparel-brand div.apparel-desc h1 {
+    font-size: 30px;
+  }
+  div.apparel-wrapper div.brand-container div.apparel-brand div.apparel-desc p {
+    font-size: 16px;
+  }
+  div.apparel-wrapper div.brand-container div.apparel-brand div.size-selection label {
+    font-size: 18px;
+  }
+  div.apparel-wrapper div.brand-container div.apparel-brand select {
+    font-size: 18px;
+  }
+  div.apparel-wrapper div.brand-container div.apparel-brand button.buy-btn {
+    font-size: 18px;
+  }
+  div.components-wrapper section.components-container {
+    margin: 0 auto;
+    padding: 4em 60px;
+  }
+  div.components-wrapper section.components-container div.main-header h1 {
+    font-size: 32px;
+  }
+  div.components-wrapper section.components-container div.main-desc p {
+    font-size: 20px;
+  }
+  div.components-wrapper section.components-container div.boxcomponents-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.components-wrapper section.components-container div.boxcomponents-container div.box-components div.head-components h1 {
+    font-size: 17px;
+  }
+  div.components-wrapper section.components-container div.boxcomponents-container div.box-components div.components-desc p {
+    font-size: 14px;
+  }
+  div.game-wrapper section.game-container {
+    margin: 0 auto;
+    padding: 4em 60px;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.main-header h3 {
+    font-size: 24px;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.main-header div.sub-head {
+    padding: 0.3em;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.main-header h1 {
+    font-size: 48px;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.main-desc h1 {
+    font-size: 42px;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.game-text p {
+    font-size: 18px;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.game-desc {
+    padding-top: 3em;
+  }
+  div.game-wrapper section.game-container div.thebasics-container div.right-content div.game-desc p {
+    font-size: 18px;
+  }
+  div.operation-wrapper section.operation-container {
+    margin: 0 auto;
+    padding: 4em 60px;
+  }
+  div.operation-wrapper section.operation-container div.left-content div.main-header h3 {
+    font-size: 24px;
+  }
+  div.operation-wrapper section.operation-container div.left-content div.main-header div.sub-head {
+    padding: 0.3em;
+  }
+  div.operation-wrapper section.operation-container div.left-content div.main-header h1 {
+    font-size: 48px;
+  }
+  div.operation-wrapper section.operation-container div.left-content div.operational-desc p {
+    font-size: 18px;
+  }
+  div.operation-wrapper section.operation-container div.left-content div.red-notice p {
+    font-size: 20px;
+  }
+  div.operation-wrapper section.operation-container div.right-content div.card-operational div.head-op h1 {
+    font-size: 27px;
+  }
+  div.operation-wrapper section.operation-container div.right-content div.card-operational div.op-desc1 h5 {
+    font-size: 20px;
+  }
+  div.operation-wrapper section.operation-container div.right-content div.card-operational div.op-desc1 p {
+    font-size: 16px;
+  }
+  div.footer-wrapper footer.footer-container {
+    padding: 4em 60px;
+  }
+  div.footer-wrapper footer.footer-container div.foot1-container {
+    display: grid;
+    grid-template-columns: "brand support";
+  }
+  div.footer-wrapper footer.footer-container div.foot1-container div.left-foot {
+    grid-area: support;
+  }
 }/*# sourceMappingURL=style.css.map */
