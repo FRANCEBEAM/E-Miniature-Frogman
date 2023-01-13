@@ -72,8 +72,9 @@ nav.nav-container{
         display: grid !important;
         height: min-content;
         cursor: pointer;
-        margin: auto 0;
-
+        margin-left: auto;
+        padding: 1em 0;
+        // padding-top: 0;
         span.bar{
             border-radius: 20%;
             margin-bottom: 5px;
@@ -83,6 +84,14 @@ nav.nav-container{
             transition: .6s;
         }
     }
+    div.navbar-toggle{
+        display: none;
+        height: min-content;
+        // margin: 1.7em 0;
+    }
+
+
+
 
     //Activate when click
     ul.nav-li.open{
@@ -104,6 +113,90 @@ nav.nav-container{
         transition: .6s;
     }
 }
+
+
+//navbar
+// div.nav-wrapper{
+//     nav.nav-container{
+//         background: rgba(0, 0, 0, 0.815);
+//         position: fixed;
+//         width: 100%;
+//         z-index: 1;
+//             ul.nav-li{
+//                 padding: 2em 1em;
+//                 li.logo{
+//                     list-style: none;
+//                 }
+//                 div.navli-container{
+//                     // z-index: -1;
+//                     list-style: none;
+//                     display: none;
+//                     line-height: 5em;
+//                     padding-top: 5.7em;
+//                     width: 100%;
+//                     text-align: center;
+//                     transition: ease-in-out .7s;
+//                     // height: 4em;
+//                     // position: absolute;
+//                     // top: 0;
+//                     left: 0;
+//                     // transform: translateY(-100%);
+//                     a{
+//                         text-decoration: none;
+//                         color: $white;
+//                     }
+//                     li.nav-item{
+//                         width: 100%;
+//                         background: rgba(0, 0, 0, 0.7);
+//                     }
+//                     li:hover{
+//                         background: $orange;
+//                         transition: 1s;
+//                     }
+//                 }
+//             }
+  
+//         div.navbar-toggle{
+//         display: grid !important;
+//         height: min-content;
+//         cursor: pointer;
+//         right: 0;
+//         position: absolute;
+        
+//         padding: 2em 1em;
+//         // padding-top: 0;
+//         span.bar{
+//             border-radius: 20%;
+//             margin-bottom: 5px;
+//             background: $white;
+//             width: 30px;
+//             height: 5px;
+//             transition: .6s;
+//         }
+//     }
+//     // div.navbar-toggle{
+//     //     display: none;
+//     //     height: min-content;
+//     //     // margin: 1.7em 0;
+//     // }
+
+
+//     // Event, Menu will open
+//     ul.nav-li{
+//         div.navli-container.open{
+//             display: block;
+//             // transform: translateY(0);
+//             transition: ease-in-out .7s;
+//         }
+//     }
+
+//   }
+// }
+
+
+
+
+
 
 
 //Hero - section
@@ -543,6 +636,9 @@ div.footer-wrapper{
 @media only screen and (min-width: 768px){
     div.nav-wrapper{
         nav.nav-container{
+            div.logo-container{
+               padding: .4em 0;
+            }
             div.navbar-toggle{
                 span.bar{
                     display: none;
@@ -561,10 +657,62 @@ div.footer-wrapper{
                   padding: 0 1em;
                     
                   background: none;
+                  a:hover{
+                    color: $orange;
+                    transition: .7s;
+                  }
                 }
             }
         }
     }
+
+div.nav-wrapper{
+    nav.nav-container{
+        div.navbar-toggle{
+            span.bar{
+                display: none;
+            }
+        }
+
+        ul.nav-li{
+            div.navli-container{
+                // display: flex;
+                // position: absolute;
+                // padding: 0;
+                
+                // width: 500px;
+                // justify-content: space-around;
+                // left: 0;
+                // float: left;
+                // width: 0;
+                // li.nav-item{
+                //     width: 0;
+                // }
+            
+                // display: flex;
+                // position: absolute;
+                // padding: 0;
+                // top: 0;
+                // justify-content: space-between;
+                // right: 0;
+                // float: right;
+                // width: 500px;
+                // // margin: 0 150px;
+                // padding-left: auto;
+                // li.nav-item{
+                //     background: none;
+                // }
+
+                display: flex;
+                position: absolute;
+                padding: 0 189px;
+                justify-content: space-between;
+                z-index: 9999;
+                top: 0;
+            }
+        }
+    }
+}
 
     //Hero - section
     div.hero-wrapper{
@@ -723,16 +871,26 @@ div.footer-wrapper{
 @media only screen and (min-width: 1200px){
     div.nav-wrapper{
         nav.nav-container{
+            z-index: 9999;
             div.logo-container{
                 width: 1200px;
-                padding: 1em 10px;
                 margin: 0 auto;
             }
             ul.nav-li{
-                width: 1200px;
-                padding: 1em 40px;
-                margin: 0 auto;
-            }
+            margin: 0 auto;
+            width: 1200px;
+            z-index: 9999;
+            // z-index: 9999;
+          }
+          div.navbar-toggle{
+            margin-left: 0;
+          }
+        }
+    }
+
+    div.nav-wrapper{
+        nav.nav-container{
+            padding: 0 30px;
         }
     }
 
