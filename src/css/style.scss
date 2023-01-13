@@ -869,30 +869,26 @@ div.footer-wrapper{
 
 //1200 view
 @media only screen and (min-width: 1200px){
-    div.nav-wrapper{
-        nav.nav-container{
-            z-index: 9999;
-            div.logo-container{
-                width: 1200px;
-                margin: 0 auto;
-            }
-            ul.nav-li{
-            margin: 0 auto;
-            width: 1200px;
-            z-index: 9999;
-            // z-index: 9999;
-          }
-          div.navbar-toggle{
-            margin-left: 0;
-          }
-        }
-    }
+    // div.nav-wrapper{
+    //     nav.nav-container{
+    //         div.logo-container{
+    //             width: 1200px;
+    //             margin: 0 auto;
+    //         }
+    //         div.navli-container{
+    //             padding: 1em;
+    //         }
+    //       div.navbar-toggle{
+    //         margin-left: 0;
+    //       }
+    //     }
+    // }
 
-    div.nav-wrapper{
-        nav.nav-container{
-            padding: 0 30px;
-        }
-    }
+    // div.nav-wrapper{
+    //     nav.nav-container{
+    //         padding: 0 30px;
+    //     }
+    // }
 
 //Hero section
     div.hero-wrapper{
@@ -1145,5 +1141,26 @@ div.footer-wrapper{
           }
         }
     }
+
+}
+
+
+
+@media only screen and (min-width: 1366px){
+
+    div.nav-wrapper{
+        nav.nav-container{
+            padding: 1em 6em;
+            div.navli-container{
+                // padding: 3em;
+                position: relative;
+                ul.nav-li{
+                    padding: 0 5em;
+                }
+
+            }
+        }
+    }
+
 
 }
